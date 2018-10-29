@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>login page</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script type="text/javascript">
+		function validation() {
+
+			// body...
+			var usre_name = form1.usertext.value;
+			var user_password = form1.userpassword.value;
+			if (usre_name=="") {
+				alert("please enter your name");
+				return false;
+			}
+			if (user_password=="") {
+				alert("please enter your password");
+				return false;
+			}
+		
+		}
+	</script>
+</head>
+<body>
+	<div class="header">
+		<h2>D I A L O G U E</h2>
+		<h4>this is placeholder text only.use this area to place any information or introductory <br>meassage about your application that may be relevant for users</h4>
+	</div>
+	<div class="loginbox">
+		<div class="dropdownbox">
+			<select>
+				<option>Bangladesh</option>
+				<option>America</option>
+				<option>France</option>
+			</select>
+		</div>
+			<div class="title">
+				<h1>Log in To Your Account</h1>
+			</div>
+			<form action="meassge.html" method="post" name="form1" id="form1" onsubmit="return validation(this)">
+			<input type="text" name="usertext" placeholder="Email or Name or Phone"><br>
+			<input type="password" name="userpassword" placeholder="user password">
+			<div class="checkbox">
+				<input type="checkbox" name="userchackbox" id="userck">
+				<label for="remamber">keep me logged in for 30 days</label>
+				<a href="#">forgot password?</a>
+			</div>
+				<div class="button">
+					<input type="submit" name="submit" value="Login">
+				</div>
+			</form>
+					<div class="text">
+						<h3>Need an account? <a href="#">Sign up</a></h3>
+
+						
+					</div>
+					
+			
+			
+	</div>
+	<div class="footer">
+		<h6>Term of Use.Help.Privacy Policy</h6>
+		
+	</div>
+
+</body>
+</html>
